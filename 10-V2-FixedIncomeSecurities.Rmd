@@ -1,0 +1,123 @@
+# Veronesi: Chapter 2: Basics of Fixed Income Securities 
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise No. 1
+
+*Figure 2.3 shows that the term structure of interest rates can be declining, with short-term spot rates higher than long-term spot rates. How steep can the decline in spot rates be? Consider two STRIPS: One has 3-years to maturity and yields a continously compounded rate $r(0,3)=10\%$. while the second has 5 years to maturity and yields a continously compounded rate $r(0,5)=5\%$. Discuss whether this scenario is possible, and, if not, what arbitrage strategy could be set up to gain from the mispricing* [@book_veronesi, p. 57].
+
+### Exercise No. 2
+
+*Compute the price, the yield and the continously compounded yield for the following Treasury bills. For the 1-year Treasury bill also compute the semi-annually compounded yield.* [@book_veronesi, p.57]
+
+a. *4-week with 3.48% discount (December 12, 2005)* [@book_veronesi, p.57]
+
+b. *4-week with 0.13% discount (November 6, 2008)* [@book_veronesi, p.57]
+
+c. *3-month with 4.93% discount (July 10, 2006)* [@book_veronesi, p.57]
+
+d. *3-month with 4.76% discount (May 8, 2007)* [@book_veronesi, p.57]
+
+e. *3-month with 0.48% discount (November 4, 2008)* [@book_veronesi, p.58]
+
+f. *6-month with 4.72% discount (April 21, 2006)* [@book_veronesi, p.58]
+
+g. *6-month with 4.75% discount (June 6, 2007)* [@book_veronesi, p.58]
+
+h. *6-month with 0.89% discount (November 11, 2008)* [@book_veronesi, p.58]
+
+i. *1-year with 1.73% discount (September 30, 2008)* [@book_veronesi, p.58]
+
+j. *1-year with 1.19% discount (November 5, 2008)* [@book_veronesi, p.58]
+
+### Exercise No. 3
+
+*You are given the following data on different rates with the same maturity (1.5 years), but quoted on a different basis and different compounding frequencies:* [@book_veronesi, p.58]
+
+* *Continously compounded rate: 2.00% annualized rate* [@book_veronesi, p.58]
+
+* *Continously compounded return on maturity: 3.00%* [@book_veronesi, p.58]
+
+* *Annually compunded rate: 2.10% annualized rate* [@book_veronesi, p.58]
+
+* *Semi-annually compounded rate: 2.01% annualized rate* [@book_veronesi, p.58]
+
+*You want to find an abitrage opportunity among these rates. Is there any one that seems to be mispriced?* [@book_veronesi, p.58]
+
+### Exercise No. 4
+
+*Using the semi-annually compounded yield curve in Table 2.4, price the following securities:* [@book_veronesi, p.58]
+
+a. *5-year zero coupon bond* [@book_veronesi, p.58]
+
+b. *7-year coupon bond paying 15% semiannually* [@book_veronesi, p.58]
+
+c. *4-year coupon bond paying 7% quarterly* [@book_veronesi, p.58]
+
+d. *3 1/4-year coupon bond paying 9% semiannually* [@book_veronesi, p.58]
+
+e. *4-year floating rate bond with zero spread and semiannually payments* [@book_veronesi, p.58]
+
+f. *2 1/2-year floating rate bond with zero spread and annual payments* [@book_veronesi, p.58]
+
+g. *5 1/2-year floating rate bond with 40 basis point spread with semiannual payments* [@book_veronesi, p.58]
+
+### Exercise No. 5
+
+*Consider a 10-year coupon bond paying 6% coupon rate.* [@book_veronesi, p.58]
+
+a. *What is its price if its yield to maturity is 6%? What if it is 5% or 7%?* [@book_veronesi, p.58]
+
+b. *Compute the price of the coupon bond for yields ranging between 1% and 15%. Plot the resulting bond price versus the yield to maturity. What does the plot look like?* [@book_veronesi, p.58]
+
+### Exercise No. 6
+
+*Consider the data in Table 2.4. Consider two bonds, both with 7 years to maturity, but with different coupon rates. Let the two coupon rates be 15% and 3%.* [@book_veronesi, p.58]
+
+a. *Compute the prices and the yields to maturity of these coupon bonds.* [@book_veronesi, p.58]
+
+b. *How do yields to maturity compare to each other? If they are different, why are they different? Would the difference in yields imply that one is a better "buy" than the other?* [@book_veronesi, p.58]
+
+Insert Table 2.4 here!!!
+
+### Exercise No. 7
+
+*Today is May 15, 2000.* [@book_veronesi, p.59]
+
+a. *Compute the discount curve* $Z(0,T)$ *for T = 6 month, 1 year, 1.5 year and 2 years from the following data:* [@book_veronesi, p.59]
+
+    *  *A 6-month zero coupon bond priced at $96.80 (issued 5/15/2000)* [@book_veronesi, p.59]
+    
+    *  *A 1-year note with 5.75% coupon priced at $99.56 (issued 5/15/1998)* [@book_veronesi, p.59]
+    
+    *  *A 1.5-year note with 7.5% coupon priced at $100.86 (issued 11/15/1991)* [@book_veronesi, p.59]
+    
+    * *A 2-year note with 7.5% coupon priced at $101.22 (issued 5/15/1992)* [@book_veronesi, p.59]
+
+b. *Once you get the discount curve $Z(o,T)$ you take another look at the data and you find the following 1-year bonds:* [@book_veronesi, p.59]
+
+    i. *A 1-year note with 8.00% coupon priced at $101.13 (issued 5/15/1991)* [@book_veronesi, p.59]
+    
+    ii. *A 1-year bond with 13.13% coupon priced at $106.00 (issued 4/2/1981)* [@book_veronesi, p.59]
+
+*Compute the prices for these bonds with the discounts you found. Are the prices the same as what the market says? Is there an arbitrage opportunity? Why?* [@book_veronesi, p.59]
+
+### Exercise No. 8
+
+*On May 15, 2000 you obtain the data on Treasuries in Table 2.5. Compute the semiannual yield curve, spanning over 9 years, from the data using the bootstrap procedure.* [@book_veronesi, p.59]
+
+Insert Table 2.5 here!!!
+
+### Exercise No. 9
+
+*The Orange County case study at the end of the chapter discusses the pricing of inverse floaters, and provides a decomposition of inverse floaters in terms of a coupon bond, a floating rate bond, and a zero coupon bond (see Equation 2.43). Find an alternative decomposition of the same security, and compute the price. Do you obtain the same price? Discuss your findings in light of the law of one price discussed in Chapter 1.* [@book_veronesi, p.59]

@@ -1,0 +1,83 @@
+# Veronesi: Chapter 7: Inflation, Monetary Policy and the Federal Funds Rate
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise No. 1
+
+*In this chapter we estimated two models to predict the Fed funds rate* [@book_veronesi, p.272]
+
+$$r^{FF}(t)=\alpha + \beta_1 r^{FF}(t-1)+\beta_2 X^{Pay}(t-1)+\beta_3 X^{Inf}(t-1)$$
+
+$$r^{FF}(t)=\alpha + \beta_1 r^{FF}(t-1) + \beta_2 X^{Pay}(t-1) + \beta_3 X^{Inf}(t-1) +\beta_4 f^{Fut}(t,t+1)$$
+
+*Table 7.6 summarizes the estimates in Tables 7.1 and 7.3.* [@book_veronesi, p.272]
+
+a. *Use the estimates in Table 7.6 to perform a one-month-ahead prediction of the Fed funds target rate using the data in Table 7.7. That is, for instance, using the entries on Dec-06, compute the predicted Fed funds rate on Jan-07. Similarly, using the data on Jan-07 to predict the Fed funds rate on Feb-07. And so on. Perform the exercise using both models.* [@book_veronesi, p.272]
+
+b. *The first column in Table 7.7 provides the actual ex-post Fed Funds target rate. Plot both models predictions of the Fed funds rate and the actual values. How close are the estimates?* [@book_veronesi, p.272]
+
+c. *Compute the sum of squarred errors for both models. Based on this calculation, which model seems to be more accurate?* [@book_veronesi, p.272]
+
+### Exercise No. 2
+
+*Today is December 12, 2008 and TIPS prices are in Table 7.8.* [@book_veronesi, p.272]
+
+a. *Use the extended Nelson Siegel model in Equation 7.28 to calculate the real discount curve and real yield curve.* [@book_veronesi, p.272]
+
+b. *Your etimates for the extended Nelson Siegel model's parameters should be close to $\theta_0 = 6278.3013$, $\theta_1 = -6278.227$, $\theta_2 = -6289.189$, $\theta_3 = -0.18763$, $\kappa_1 = 27056.491$, and $\kappa_2 = 32.190532$. Given Equation 7.28, which describes the application of the extended Nelson Siegel model to real interest rates, can you see what the short-term interest rate $r(0)$ [i.e., $r(0,T)$ when $T \rightarrow 0$] is by looking only at the parameters?* [@book_veronesi, p.274]
+
+c. *Using the real term structure, price the a 2% Coupon TIPS with maturity 4/14/2012 and index ratio 1.07817.* [@book_veronesi, p.274]
+
+d. *On December 12, 2008, the TIPS priced in Part (c) was actually trading at 95 15/16. Is your price close to trading price?* [@book_veronesi, p.274]
+
+### Exercise No. 3
+
+*Consider the TIPS data in Table 7.8. Assume that you decide to make a portfolio from Securities 1 and 3 in the table. Specifically, you decide to strip the coupons from the TIPS. You decide to short the next five coupon payments of Security 1 and go long the next five coupon payments of Security 3.* [@book_veronesi, p.274]
+
+a. *Because you are essentially short and long 2% in real terms, is the price of the total position zero? Explain.* [@book_veronesi, p.274]
+
+b. *What is the* __*nominal*__ *price of this position? Assuming today is December 12, 2008, use the estimates for the extended Nelson Siegel model (Equation 7.28) given in the previous exercise, i.e. $\theta_0 = 6278.3013$, $\theta_1 = -6278,227$, $\theta_2 = -6289.189$, $\theta_3 = -0.18763$, $\kappa_1 = 27056.491$ and $\kappa_2 = 32.190532$. Do you have to pay or do you receive money?* [@book_veronesi, p.274]
+
+c. *The next coupon payment occurs on January 15, 2009, and you are given the index ratios for these two securities on that date. They are 1.16196 for Security 1 and 1.08173 for Security 3. What will the actual cash flow be at that date? Do you receive money or do you pay money* [@book_veronesi, p.274]
+
+d. *Is this portfolio similar to holding inflation risk or is it more like holding insurance against inflation risk?* [@book_veronesi, p.274]
+
+### Exercise No. 4
+
+*Consider the TIPS data in Table 7.8. Assume that you decide to make a __costless__ portfolio from Securities 1 and 3 in the table. Specifically you decide to strip the coupons from TIPS. You decide to short the next five coupon payments of Security 1 and go long the next five coupon payments of Security 3.* [@book_veronesi, p.274]
+
+a. *In order to be costless, what will be the ratio of Security 3 to Security 1 that you will have to purchase?* [@book_veronesi, p.275]
+
+b. *What will the next coupon payment be in nominal terms?* [@book_veronesi, p.275]
+
+c. *What will the coupon payments of this position be in real terms?* [@book_veronesi, p.275]
+
+d. *What will the price of this position be in real terms? Can you back out the nominal price from the real price?* [@book_veronesi, p.275]
+
+### Exercise No. 5
+
+*An important feature of TIPS is that the principal amount cannot go below 100. In other words, if the index ratio goes under one this parameter is automatically set to one. This is important in cases when there is deflation (negative inflation), because in this scenario the value of the principle decreases. Yet given the previously stated rule, the fall is the reference CPI cannot go below its original value at inception. Usually there is little or no deflation so index ratios on TIPS tend to accumulate high values: Even in the event of deflation the value is too high to send it below one. Yet this isn't the case for recently issued on-the-run TIPS. Suppose today is January 16, 2002 and you have the TIPS data in Panel A of Table 7.9.* [@book_veronesi, p.275]
+
+a. *Use the data in Panel A to estimate the extended Nelson Siegel model (see Equation 7.28) and compute the term structure of real interest rates. The parameter values you get the extended Nelson Siegel model should be similar to the following : $\theta_0 = 6278.3013$, $\theta_1 = -6278.271$, $\theta_2 = -6289.657$, $\theta_3=0.0573662$, $\kappa_1 = 27056.491$, and $\kappa_2 = 24.224094$.* [@book_veronesi, p.275]
+
+b. *Consider now the TIPS in Panel B of Table 7.9. You notice that the index ratio is very close to one: This means that the security has not accumulated much inflation since it was issued (October 15, 2001). This makes it very easy for it to go below one if there is a little deflation in the next period. What happens to this bond if there is deflation? Is the cash from the coupon higher, lower, or the same as if there wasn't any inflation?* [@book_veronesi, p.275]
+
+c. *Is this bond more or less valuable than any of the others in Panel A?* [@book_veronesi, p.275]
+
+d. *Consider the real term structure of interest rates computed above. Given those parameters, what is the price of this security?* [@book_veronesi, p.275]
+
+e. *What is the squarred pricing error of this sequrity? Is it very different from the ones for the other securities in Panel A?* [@book_veronesi, p.275]
+
+f. *What is the difference in terms of the clean prices?* [@book_veronesi, p.275]
+
+g. *Does this analysis reflect you answer in Part (c) above?* [@book_veronesi, p.275]

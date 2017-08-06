@@ -1,5 +1,11 @@
 book_filename: "AssetPricingBook"
+
 language:
   ui:
     chapter_name: "Chapter "
+    
 before_chapter_script: "_common.R"
+
+rmd_files: [
+
+]

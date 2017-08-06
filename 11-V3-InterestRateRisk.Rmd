@@ -1,0 +1,223 @@
+# Veronesi: Chapter 3: Basics of Interest Rate Risk Management
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise No. 1
+
+*Today is May 15, 2000, and the current, semiannually compounded yield curve is in Table 3.6. Compute the duration for the following securities:* [@book_veronesi, p.99]
+
+Insert Table 3.6 here!!!
+
+a. *3-year zero coupon bond* [@book_veronesi, p.99]
+
+b. *3 1/4-year coupon bond paying 6% semiannually* [@book_veronesi, p.99]
+
+c. *1-year coupon bond paying 4% quarterly* [@book_veronesi, p.99]
+
+d. *6-year floating rate bond with a zero spread, paying semiannually* [@book_veronesi, p.100]
+
+e. *3-year floating rate bond with a 35 basis point spread, paid semiannually* [@book_veronesi, p.100]
+
+f. *4 1/4 year floating rate bond with 50 basis point spread, paid semiannually* [@book_veronesi, p.100]
+
+### Exercise No. 2
+
+*An investor is planning a $100 milion short-term investment and is going to choose among two different portfolios. This investor is seriously worried about interest rate volatility in the market. Compute the duration of the portfolios. Which one is more adequate for the investor's objective? Assume today is May 15, 2000, which means you may use the yield curve presented in Table 3.6* [@book_veronesi, p.100]
+
+*Portfoilo A* [@book_veronesi, p.100]
+
+* *40% invested in 4 1/4-year bonds paying 5% semiannually* [@book_veronesi, p.100]
+
+* *25% invested in 7-year bonds paying 2.5% semiannually* [@book_veronesi, p.100]
+
+* *20% invested in 1 3/4-year floating rate bonds with 30 basis point spread paying semiannually* [@book_veronesi, p.100]
+
+* *105 invested in 1-year zero coupon bonds* [@book_veronesi, p.100]
+
+* *5% invested in 2-year bonds paying 3% quarterly* [@book_veronesi, p.100]
+
+*Portfolio B* [@book_veronesi, p.100]
+
+* *40% invested in 7-year bonds paying 10% semiannually* [@book_veronesi, p.100]
+
+* *25% invested in 4 1/4-year bonds paying 3% quarterly* [@book_veronesi, p.100]
+
+* *20% invested in 90-day zero coupon bonds* [@book_veronesi, p.100]
+
+* *10% invested in 1 1/2-year bonds paying 6% semiannually* [@book_veronesi, p.100]
+
+### Exercise No. 3
+
+*Compute the Macaulay and modified duration for the same securities as in Exercise 1.* [@book_veronesi, p.100]
+
+### Exercise No. 4
+
+*Using the yield curve in Table 3.6, compute the dollar duration for the following securities:* [@book_veronesi, p.100]
+
+a. *Long a 5-year coupon bond paying 4% semiannually* [@book_veronesi, p.101]
+
+b. *Short a 7-year zero coupon bond* [@book_veronesi, p.101]
+
+c. *Long a 3 1/2-year coupon bond paying 7% quarterly* [@book_veronesi, p.101]
+
+d. *Long a 2-year zero spread floating rate bond paid semiannually* [@book_veronesi, p.101]
+
+e *Short a 2 1/4-year zero spread floating rate bond paid semiannually* [@book_veronesi, p.101]
+
+f. *Short a 5 1/4-year floating rate bond with 25 basis point spread paid semiannually* [@book_veronesi, p.101]
+
+### Exercise No. 5
+
+*The investor in Exercise 2 is still worried about interest rate volatility. Instead of a duration measure, the investor wants to know the following:* [@book_veronesi, p.101]
+
+a. *What is the dollar duration of each portfolio?* [@book_veronesi, p.101]
+
+b. *What is PV01 for each portfolio?* [@book_veronesi, p.101]
+
+c. *Does the conclusion arrived at Exercise 2 stand?* [@book_veronesi, p.101]
+
+### Exercise No. 6
+
+*Due to a series of unfortunate events, the investor is Exercise 2 just found out that he must raise \$50 million. The investor decides to short the long-term bonds in each portfolio to raise the \$50 million. In other words, for portfolio A the investor would spend the same on all securities except for the 7-year coupon bonds (paying 2.5% semiannually) from which the investor will short enough to get to \$50 million. For portfolio B the investor would spend the same on all other securities except for the 7-year coupon bonds (paying 10% semiannually) from which the investor will short enough to get to \$50 million.* [@book_veronesi, p.101]
+
+a. *How many bonds of each kind does the investor have to short?* [@book_veronesi, p.101]
+
+b. *What is the new dollar duration of each portfolio?* [@book_veronesi, p.101]
+
+c. *Does the conclusion arrived at in Exercise 2 stand?* [@book_veronesi, p.101]
+
+### Exercise No. 7
+
+*Exercises 7 to 12 use the two yield curves at two moments in time in Table 3.7, and the following portfolio:* [@book_veronesi, p.101]
+
+Insert Table 3.7 here!!!
+
+* *Long $20 million of a 6-year inverse floaters with the following quarterly coupon:* [@book_veronesi, p.101]
+
+$$Coupon \ at \ t = 20\% - r_4 (t-0.25)$$
+
+*where $r_4(t)$ denotes the quarterly compounded, 3-month rate.* [@book_veronesi, p.101]
+
+* *Long $20 million of 4-year floating rate bonds with a 45 basis point spread paying semiannually.* [@book_veronesi, p.101]
+
+* *Short $30 million of a 5-year zero coupon bond.* [@book_veronesi, p.101]
+
+*You are standing on February 15, 1994:* [@book_veronesi, p.101]
+
+a. *What is the total value of the portfolio?* [@book_veronesi, p.101]
+
+b. *Compute the dollar duration of the portfolio.* [@book_veronesi, p.101]
+
+### Exercise No. 8
+
+*Exercises 7 to 12 use the two yield curves at two moments in time in Table 3.7, and the following portfolio:* [@book_veronesi, p.101]
+
+* *Long $20 million of a 6-year inverse floaters with the following quarterly coupon:* [@book_veronesi, p.101]
+
+$$Coupon \ at \ t = 20\% - r_4 (t-0.25)$$
+
+*where $r_4(t)$ denotes the quarterly compounded, 3-month rate.* [@book_veronesi, p.101]
+
+* *Long $20 million of 4-year floating rate bonds with a 45 basis point spread paying semiannually.* [@book_veronesi, p.101]
+
+* *Short $30 million of a 5-year zero coupon bond.* [@book_veronesi, p.101]
+
+*You are worried about interest rate vlatility. You decide to hedge your portfolio with a 3-year coupon bond paying 4% on a semiannually basis.* [@book_veronesi, p.101]
+
+a. *How much should you go short/long on this bond in order to make it immune to interest rate changes?* [@book_veronesi, p.102]
+
+b. *What is the total value of the portfolio now?* [@book_veronesi, p.102]
+
+### Exercise No. 9
+
+*Exercises 7 to 12 use the two yield curves at two moments in time in Table 3.7, and the following portfolio:* [@book_veronesi, p.101]
+
+* *Long $20 million of a 6-year inverse floaters with the following quarterly coupon:* [@book_veronesi, p.101]
+
+$$Coupon \ at \ t = 20\% - r_4 (t-0.25)$$
+
+*where $r_4(t)$ denotes the quarterly compounded, 3-month rate.* [@book_veronesi, p.101]
+
+* *Long $20 million of 4-year floating rate bonds with a 45 basis point spread paying semiannually.* [@book_veronesi, p.101]
+
+* *Short $30 million of a 5-year zero coupon bond.* [@book_veronesi, p.101]
+
+*Assume that it is now May 13, 1994 and that the yield curve has changed accordingly (see Table 3.7).* [@book_veronesi, p.102]
+
+a. *What is the value of the unhedged porfolio now?* [@book_veronesi, p.102]
+
+b. *What is the value of the hedged portfolio* [@book_veronesi, p.102]
+
+c. *Is the value the same? Did the immunization strategy work? How do you know that changes in value are not a product of coupon payments made over the period?* [@book_veronesi, p.102]
+
+### Exercise No. 10
+
+*Exercises 7 to 12 use the two yield curves at two moments in time in Table 3.7, and the following portfolio:* [@book_veronesi, p.101]
+
+* *Long $20 million of a 6-year inverse floaters with the following quarterly coupon:* [@book_veronesi, p.101]
+
+$$Coupon \ at \ t = 20\% - r_4 (t-0.25)$$
+
+*where $r_4(t)$ denotes the quarterly compounded, 3-month rate.* [@book_veronesi, p.101]
+
+* *Long $20 million of 4-year floating rate bonds with a 45 basis point spread paying semiannually.* [@book_veronesi, p.101]
+
+* *Short $30 million of a 5-year zero coupon bond.* [@book_veronesi, p.101]
+
+*Instead of assuming that the change took place 6 months later, assume that the change in the yield curve occured an instant after February 15, 1994.* [@book_veronesi, p.102]
+
+a. *What is the value of the unhedged portfolio?* [@book_veronesi, p.102]
+
+b. *What is the value of the hedged portfolio* [@book_veronesi, p.102]
+
+### Exercise No. 11
+
+*Exercises 7 to 12 use the two yield curves at two moments in time in Table 3.7, and the following portfolio:* [@book_veronesi, p.101]
+
+* *Long $20 million of a 6-year inverse floaters with the following quarterly coupon:* [@book_veronesi, p.101]
+
+$$Coupon \ at \ t = 20\% - r_4 (t-0.25)$$
+
+*where $r_4(t)$ denotes the quarterly compounded, 3-month rate.* [@book_veronesi, p.101]
+
+* *Long $20 million of 4-year floating rate bonds with a 45 basis point spread paying semiannually.* [@book_veronesi, p.101]
+
+* *Short $30 million of a 5-year zero coupon bond.* [@book_veronesi, p.101]
+
+*Now use the February 15, 1994 yield curve to to price the stream of cash flows on May 13, 1994.* [@book_veronesi, p.102]
+
+a. *What is the change in value of the unhedged portfolio?* [@book_veronesi, p.102]
+
+b. *What is the value of the hedged portfolio?* [@book_veronesi, p.102]
+
+### Exercise No. 12
+
+*Exercises 7 to 12 use the two yield curves at two moments in time in Table 3.7, and the following portfolio:* [@book_veronesi, p.101]
+
+* *Long $20 million of a 6-year inverse floaters with the following quarterly coupon:* [@book_veronesi, p.101]
+
+$$Coupon \ at \ t = 20\% - r_4 (t-0.25)$$
+
+*where $r_4(t)$ denotes the quarterly compounded, 3-month rate.* [@book_veronesi, p.101]
+
+* *Long $20 million of 4-year floating rate bonds with a 45 basis point spread paying semiannually.* [@book_veronesi, p.101]
+
+* *Short $30 million of a 5-year zero coupon bond.* [@book_veronesi, p.101]
+
+*From the answers to the Exercises 7 - 11, answer the following:* [@book_veronesi, p.102]
+
+a. *What is the change in value in the portfolio due to the change in time only, without change in interest rates?* [@book_veronesi, p.102]
+
+b. *Is this difference a loss?* [@book_veronesi, p.102]
+
+c. *Once we have adjusted for paid coupons, what is the change in value of the portfolio due to interest rate movements?* [@book_veronesi, p.102]

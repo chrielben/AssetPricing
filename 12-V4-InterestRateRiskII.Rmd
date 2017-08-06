@@ -1,0 +1,133 @@
+# Veronesi: Chapter 4: Basic Refinements in Interest Rate Risk Management
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise No. 1
+
+*On May 15, 2000 the semi-annually compounded yield curve was as in Table 4.6. Calculate the convexity for the following securities:* [@book_veronesi, p.138]
+
+a. *4-year zero coupon bond* [@book_veronesi, p.138]
+
+b. *2 1/4-year coupon bond paying 5% semiannually* [@book_veronesi, p.138]
+
+c. *2-year coupon bond paying 3% quarterly* [@book_veronesi, p.138]
+
+d. *3 1/2-year floating rate bond with 20 basis point spread, paid semiannually* [@book_veronesi, p.138]
+
+e. *4 1/4-year floating rate bond with 35 basis point spread, paid semiannually* [@book_veronesi, p.138]
+
+### Exercise No. 2
+
+*It is May 15, 2000 and an investor is planning to invest $100 million in one of the two portfolios below. The investor's main concern is the change in interest rates that might affect the short-term value of the portfolio. Compute the changes in price of the security stemming from duration and convexity. Which portfolio is less sensitive to changes in interest rates? The portfolios are the following:* [@book_veronesi, p.138]
+
+*Portfolio A* [@book_veronesi, p.139]
+
+* *30% invested in 5-year coupon bonds paying 4% quarterly* [@book_veronesi, p.139]
+
+* *25% invested in 4 1/4-year coupon bonds paying 6% semiannually* [@book_veronesi, p.139]
+
+* *20% invested in 90-day zero coupon bonds* [@book_veronesi, p.139]
+
+* *15% invested in 2 1/2-year floating rate bonds with zero spread paid quarterly* [@book_veronesi, p.139]
+
+* *10% invested in 6-year zero coupon bonds* [@book_veronesi, p.139]
+
+*Portfolio B* [@book_veronesi, p.139]
+
+* *40% invested in 7-year coupon bonds paying 2% semiannually* [@book_veronesi, p.139]
+
+* *30% invested in 3 1/4-year floating rate with 50 basis point spread paid semiannually* [@book_veronesi, p.139]
+
+* *20% invested in 4-year coupon bonds paying 3.5% semiannually* [@book_veronesi, p.139]
+
+* *10% invested in 90-day zero coupon bonds* [@book_veronesi, p.139]
+
+### Exercise No. 3
+
+*Consider Exercise 2. You are told that the mean of daily change in interest rates is zero and that the variance of the daily change of interest rates is $3.451 \times 10 - 7$. What is the annualized expected return taking into account convexity?* [@book_veronesi, p.139]
+
+### Exercise No. 4
+
+*Rework Example 4.3 but using 2-year zero coupon bond for hedging, instead of the 10-year zero coupon bond. How do the results in Table 4.2 change?* [@book_veronesi, p.139]
+
+### Exercise No. 5
+
+*Consider the trade of purchasing a 10-year coupon bond and hedge the interest rate risk using 2-year zero coupon bond. Assume the term structure of interest rates is flat at 4.5% continously compounded interest rate. Compute the profits/losses from the strategy under various scenarios of interest rate variation, such as a positive or negative shift of 10 basis points, 1%, or 2% (see e.g., Example 4.3). Perform this exercise assuming (a) The trade is performed over one day; (b) The trade is performed over one week; (c) The trade is performed over one month. How do the results change under these various scenarios? Discuss your results.* [@book_veronesi, p.139]
+
+### Exercise No. 6
+
+*Compute the level factor and the butterfly spread for each term structure in Table 4.7.* [@book_veronesi, p.139]
+
+a. *Which period had the highest slope?* [@book_veronesi, p.139]
+
+b. *Which period had the highest curvature?* [@book_veronesi, p.139]
+
+c. *Can you recognize the periods with higher slope or curvature on a graph?* [@book_veronesi, p.139]
+
+d. *Which interval saw the gretest change in slope?* [@book_veronesi, p.139]
+
+e. *Which interval saw the greatest change in curvature?* [@book_veronesi, p.139]
+
+### Exercise No. 7
+
+*Using Tables 4.8 and 4.9, compute the factor duration of level, slope, and curvature, for each of the following securities on February 15, 1994:* [@book_veronesi, p.139]
+
+Insert tables 4.8 and 4.9 here!!!
+
+a. *4-year zero coupon bond* [@book_veronesi, p.139]
+
+b. *2 1/2-year coupon bond paying 3% semiannually* [@book_veronesi, p.139]
+
+c. *3 1/4-year floating rate bond with zero spread paid semiannually* [@book_veronesi, p.139]
+
+d. 4 1/4-year coupon rate bond with 35 basis point spread paid semiannually* [@book_veronesi, p.139]
+
+### Exercise No. 8
+
+*In this exercise you need to describe an immunization strategy for a portfolio, given the factors in Table 4.8. The term structures of interest rates at two dates are in Table 4.9.* [@book_veronesi, p.140]
+
+Insert table 4.9 here!!!
+
+a. *You are standing at February 15, 1994 (see table) and you hold the following portfolio:* [@book_veronesi, p.140]
+
+    * *Long $30 million of a 6-year inverse floater with coupon paid quarterly* [@book_veronesi, p.140]
+
+    * *Long $30 million of a 4-year floating rate bond with a 45 basis point spread paid semiannually* [@book_veronesi, p.140]
+  
+    * *Short $20 million of a 3-year coupon bond paying 4% semiannually* [@book_veronesi, p.140]
+  
+    i. *What is the total value of the portfolio?* [@book_veronesi, p.140]
+  
+    ii. *Compute the dollar duration of the portfolio.* [@book_veronesi, p.140]
+  
+b. *You are worried about interest rate volatility. You decided to hedge your portfolio with the following bonds:* [@book_veronesi, p.140]
+
+    * *A 3-month zero coupon bond* [@book_veronesi, p.140]
+  
+    * *A 6-year zero coupon bond* [@book_veronesi, p.140]
+  
+    i. *How much should you go short/long on these bonds in order to make the portfolio immune to interest rate changes* [@book_veronesi, p.140]
+  
+    ii. *What is the total value of the portfolio now?* [@book_veronesi, p.140]
+
+c. *Assume that it is now May 13, 1994 and that the yield curve has changed accordingly.* [@book_veronesi, p.140]
+
+    i. *What is the value of the unhedged portfolio now?* [@book_veronesi, p.142]
+  
+    ii. *What is the value of the hedged portfolio?* [@book_veronesi, p.142]
+  
+    iii. *Is the value the same? Did the immunization strategy work? How do you know that changes in value are not product of coupon payments made over the period?* [@book_veronesi, p.142]
+  
+d. *Instead of assuming that the change took place 3 months later, assume that the change in the yield curve occured an instant after February 15, 1994.* [@book_veronesi, p.142]
+
+    i. *What is the value of the unhedged portfolio?* [@book_veronesi, p.142]
+  
+    ii. *What is the value of the hedged portfolio?* [@book_veronesi, p.142]

@@ -1,0 +1,520 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Asset Pricing},
+            pdfauthor={Christoffer Jul Elben},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{Asset Pricing}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Christoffer Jul Elben}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{2017-08-06}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{lipsum}
+\usepackage{afterpage}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{float}
+\usepackage{cmbright}
+\usepackage{dblfloatfix}  
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{fix-cm}
+\graphicspath{{./figures/}}
+\definecolor{darkblue}{rgb}{0.1,0.0,0.5}
+
+\fancypagestyle{style1}{
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.25cm]{logo_aarhus_university}}
+\fancyhead[R]{\includegraphics[height=1.25cm]{logo_aarhus_bss}}
+\fancyfoot[C]{\textcopyright 2017 Christoffer Jul Elben}
+\renewcommand{\headrulewidth}{0.4pt}
+}
+
+\fancypagestyle{style2}{
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.25cm]{logo_aarhus_university}}
+\fancyhead[R]{\includegraphics[height=1.25cm]{logo_aarhus_bss}}
+\fancyfoot[C]{\textcopyright 2017 Christoffer Jul Elben}
+\fancyfoot[R]{\thepage\ of \pageref{last_page}}
+\renewcommand{\headrulewidth}{0.4pt}
+}
+
+\fancypagestyle{style3}{
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=1.25cm]{logo_aarhus_university}}
+\fancyhead[R]{\includegraphics[height=1.25cm]{logo_aarhus_bss}}
+\fancyfoot[C]{\textcopyright 2017 Christoffer Jul Elben}
+\fancyfoot[R]{\thepage\ of \pageref{last_page_appendix}}
+\renewcommand{\headrulewidth}{0.4pt}
+}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\chapter{Preface}\label{preface}
+
+\[2+2=4\]
+
+Hello world \citep[p.~123]{book_danthine} \citep[p.~123]{book_veronesi}.
+
+\chapter{Danthine \& Donaldson: Chapter 2: The Challenges of Asset
+Pricing: A Road
+Map}\label{danthine-donaldson-chapter-2-the-challenges-of-asset-pricing-a-road-map}
+
+Text
+
+\section{Pre-lecture notes}\label{pre-lecture-notes}
+
+Text
+
+\section{Lecture notes}\label{lecture-notes}
+
+Text
+
+\section{Exercises}\label{exercises}
+
+\chapter{Danthine \& Donaldson: Chapter 3: Making Choices in Risky
+Situations}\label{danthine-donaldson-chapter-3-making-choices-in-risky-situations}
+
+Text
+
+\section{Pre-lecture notes}\label{pre-lecture-notes-1}
+
+Text
+
+\section{Lecture notes}\label{lecture-notes-1}
+
+Text
+
+\subsection{Exercise 3.1}\label{exercise-3.1}
+
+\emph{Utility function: Under certainty, any increasing monotone
+transformation of a utility function is also a utility function
+representing the same preferences. Under uncertainty, we must restrict
+this statement to linear transformations if we are to keep the same
+preference representation. Give a mathematical as well as an economic
+interpretation for this.} \citep[p.4]{exercises_danthine}
+
+\emph{Check it with this example. Assume an initial utility function
+attributes the following values to three perspectives:}
+\citep[p.4]{exercises_danthine}
+
+\[B \ \ \ u\left(B\right)=100\] \[M \ \ \ u\left(M\right)=10\]
+\[P \ \ \ u\left(P\right)=50\]
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{Check that with this initial utility function, the lottery
+  \(L=\left(B,M,0.50\right)\succ P\).} \citep[p.4]{exercises_danthine}
+\item
+  \emph{The proposed transformations are
+  \(f\left(x\right)=a+bx, a\geq 0,b>0\) and
+  \(g\left(x\right)=ln\left(x\right)\). Check that under
+  \(f, L\succ P\).} \citep[p.5]{exercises_danthine}
+\end{enumerate}
+
+\subsection{Exercise 3.2}\label{exercise-3.2}
+
+\emph{Lotteries: Discuss the equivalence between
+\(\left(x,z,\pi\right)\) and
+\(\left(x,y,\pi+\left(1-\pi\right)\tau\right)\) when
+\(z=\left(x,y,\tau\right)\). Can you think of circumstances under which
+they would not be viewed as equal?} \citep[p.5]{exercises_danthine}
+
+\subsection{Exercise 3.3}\label{exercise-3.3}
+
+\emph{Intertemporal consumption: Consider a two-date (one-period)
+economy and an agent with utility function over consumption:}
+\citep[p.5]{exercises_danthine}
+
+\[U\left(c\right)=\frac{c^{1-\gamma}}{1-\gamma}\]
+
+\emph{at each period. Define the intertemporal utility function as
+\(V\left(c_1,c_2\right)=U\left(c_1\right)+U\left(c_2\right)\). Show (try
+it mathematically) that the agent will always prefer a smooth
+consumption stream to a more variable one with the same mean, that is,}
+\citep[p.5]{exercises_danthine}
+
+\[U\left(\bar{c}\right)+U\left(\bar{c}\right)>U\left(c_1\right)+U\left(c_2\right)\]
+\[If \ \bar{c}=\frac{c_1+c_2}{2}\]
+
+\chapter{Danthine \& Donaldson: Chapter 4: Measuring Risk and Risk
+Aversion}\label{danthine-donaldson-chapter-4-measuring-risk-and-risk-aversion}
+
+Text
+
+\section{Pre-lecture notes}\label{pre-lecture-notes-2}
+
+Text
+
+\section{Lecture notes}\label{lecture-notes-2}
+
+Text
+
+\section{Exercises}\label{exercises-1}
+
+\subsection{Exercise No. 4.1}\label{exercise-no.-4.1}
+
+\emph{Risk aversion: Consider the following utility functions (defined
+over wealth Y):} \citep[p.5]{exercises_danthine}
+
+\[\left(1\right) \ U\left(Y\right)=-\frac{1}{Y}\]
+\[\left(2\right) \ U\left(Y\right)=ln \ Y\]
+\[\left(3\right) \ U\left(Y\right)=-Y^{-\gamma}\]
+\[\left(4\right) \ U\left(Y\right)=-exp\left(-\gamma Y\right)\]
+\[\left(5\right) \ U\left(Y\right)=\frac{Y^\gamma}{\gamma}\]
+\[\left(6\right) \ U\left(Y\right)=\alpha Y-\beta Y^2\]
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{Check that they are well behaved \(\left(U'>0,U''<0\right)\) or
+  state restrictions on the parameters so that they are {[}utility
+  functions (1) -- (6){]}. For utility function (6), take positive
+  \(\alpha\) and \(\beta\), and give the range of wealth over which the
+  utility function is well behaved.} \citep[p.6]{exercises_danthine}
+\item
+  \emph{Compute the absolute and relative risk-aversion coefficients.}
+  \citep[p.6]{exercises_danthine}
+\item
+  \emph{What is the effect of the parameter \(\gamma\) (when relevant)?}
+  \citep[p.6]{exercises_danthine}
+\item
+  \emph{Classify the functions as increasing/decreasing risk-aversion
+  utility functions (both absolute and relative).}
+  \citep[p.6]{exercises_danthine}
+\end{enumerate}
+
+\subsection{Exercise 4.2}\label{exercise-4.2}
+
+\emph{Certainty equivalent:} \citep[p.6]{exercises_danthine}
+
+\[\left(1\right) \ U=-\frac{1}{Y}\] \[\left(2\right) \ U=ln \ Y\]
+
+\[\left(3\right) \ U=\frac{Y^\gamma}{\gamma}\]
+
+\emph{Consider the lottery \(L_1=\left(50,000;10,000;0.50\right)\).
+Determine the lottery \(L_2=\left(x;0;1\right)\) that makes an agent
+indifferent to lottery \(L_1\) with utility functions (1), (2), and (3)
+as defined. For utility function (3), use \(\gamma=\{0.25,0.75\}\). What
+is the effect of changing the value of \(\gamma\)? Comment on your
+results using the notions of risk aversion and certainty equivalent.}
+\citep[p.6]{exercises_danthine}
+
+\subsection{Exercise 4.3}\label{exercise-4.3}
+
+\emph{Risk premium: A businesswoman runs a firm worth CHF 100,000. She
+faces some risk of having a fire that would reduce her net worth
+according to the following three states, \(i=1,2,3\), each with
+probability \(\pi\left(i\right)\) (Scenario A).}
+\citep[p.7]{exercises_danthine}
+
+\begin{center}\includegraphics[width=150px]{figures/matrix} \end{center}
+
+\emph{Of course, in state 3, nothing detrimental happens, and her
+business retains its value of CHF 100,000.}
+\citep[p.7]{exercises_danthine}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{What is the maximum amount she will pay for insurance if she has
+  a logarithmic utility function over final wealth? (Note: The insurance
+  pays CHF 99,999 in the first case; CHF 50,000 in the second; and
+  nothing in the third.)} \citep[p.7]{exercises_danthine}
+\item
+  \emph{Do the calculations with the following alternative
+  probabilities:} \citep[p.7]{exercises_danthine}
+\end{enumerate}
+
+\begin{center}\includegraphics[width=150px]{figures/matrix} \end{center}
+
+\emph{Is the outcome (the comparative change in the premium) a surprise?
+Why?} \citep[p.7]{exercises_danthine}
+
+\subsection{Exercise 4.4}\label{exercise-4.4}
+
+\emph{Consider two investments \(A\) and \(B\). Suppose that their
+returns, \(\tilde{r}_A\) and \(\tilde{r}_B\), are such that
+\(\tilde{r}_A=\tilde{r}_B+\vartheta\), where \(\vartheta\) is a
+nonnegative random variable. Show that \(A\) FSD \(B\).}
+\citep[p.7]{exercises_danthine}
+
+\subsection{Exercise 4.5}\label{exercise-4.5}
+
+\emph{Four-partquestion:} \citep[p.7]{exercises_danthine}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{Explain intuitively the concept of first-order stochastic
+  dominance.} \citep[p.7]{exercises_danthine}
+\item
+  \emph{Explain intuitively the concept of second-order stochastic
+  dominance.} \citep[p.8]{exercises_danthine}
+\item
+  \emph{Explain intuitively the mean variance criterion.}
+  \citep[p.8]{exercises_danthine}
+\item
+  \emph{You are offered the following two investment opportunities.}
+  \citep[p.8]{exercises_danthine}
+\end{enumerate}
+
+\begin{center}\includegraphics[width=150px]{figures/matrix} \end{center}
+
+\emph{apply concepts a--d. Illustrate the comparison with a graph.}
+\citep[p.8]{exercises_danthine}
+
+\subsection{Exercise 4.6}\label{exercise-4.6}
+
+\emph{An individual (operating in perfect capital markets) with a zero
+initial wealth, and the utility function
+\(U\left(Y\right)=Y\frac{1}{2}\) is confronted with the gamble
+\(\left(16,4;\frac{1}{2}\right)\).} \citep[p.8]{exercises_danthine}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{What is his certainty equivalent for this gamble?}
+  \citep[p.8]{exercises_danthine}
+\item
+  \emph{If there was an insurance policy that, together with the
+  original gamble, would guarantee him the expected payoff of the
+  gamble, what is the maximum premium he would be willing to pay for
+  it?} \citep[p.8]{exercises_danthine}
+\item
+  \emph{What is the minimum required increase (the probability premium)
+  in the probability of the high-payoff state so that he will not be
+  willing to pay any premium for such an insurance policy? (Note that
+  the insurance policy still pays the expected payoff of the unmodified
+  gamble)} \citep[p.8]{exercises_danthine}
+\item
+  \emph{Now assume that he is confronted with the gamble
+  \(\left(36,16;\frac{1}{2}\right)\). Calculate the certainty
+  equivalent, the insurance premium, and the probability premium for
+  this case as well. Explain what is going on, and why?}
+  \citep[p.8]{exercises_danthine}
+\end{enumerate}
+
+\subsection{Exercise 4.7}\label{exercise-4.7}
+
+\emph{Refer to Table 4.2. Suppose the return data for investment 3 was
+as follows. Is it still the case} \citep[p.9]{exercises_danthine}
+
+\begin{center}\includegraphics[width=150px]{figures/matrix} \end{center}
+
+\emph{that investment 3 SSD investment 4?}
+\citep[p.9]{exercises_danthine}
+
+\subsection{Exercise 4.8}\label{exercise-4.8}
+
+\emph{Consider two investments with the following characteristics:}
+\citep[p.9]{exercises_danthine}
+
+\begin{center}\includegraphics[width=150px]{figures/matrix} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{Is there state-by-state dominance between these two
+  investments?} \citep[p.9]{exercises_danthine}
+\item
+  \emph{Is there FSD between these two investments?}
+  \citep[p.9]{exercises_danthine}
+\end{enumerate}
+
+\subsection{Exercise 4.9}\label{exercise-4.9}
+
+\emph{If you are exposed to a 50/50 probability of gaining or losing CHF
+1'000 and an insurance that removes the risk costs CHF 500, at what
+level of wealth will you be indifferent between taking the gamble or
+paying the insurance? That is, what is your certainty equivalent wealth
+for this gamble? Assume that your utility function is
+\(U\left(Y\right)=-1/Y\). What would the solution be if the utility
+function were logarithmic?} \citep[p.9]{exercises_danthine}
+
+\subsection{Exercise 4.10}\label{exercise-4.10}
+
+\emph{Assume that you have a logarithmic utility function on wealth
+\(U\left(Y\right)=ln \ Y\) and that you are faced with a 50/50
+probability of winning or losing CHF 1'000. How much will you pay to
+avoid this risk if your current level of wealth is CHF 10'000? How much
+would you pay if your level of wealth is CHF 1'000'000? Did you expect
+that the premium you were willing to pay would increase/decrease? Why?}
+\citep[p.9]{exercises_danthine}
+
+\subsection{Exercise 4.11}\label{exercise-4.11}
+
+\emph{Assume that security returns are normally distributed. Compare
+portfolios A and B, using both first and second-order stochastic
+dominance:} \citep[p.10]{exercises_danthine}
+
+\(Case 1 \\ \sigma_a>\sigma_b \\ E_a=E_b\)
+\(Case 2 \\ \sigma_a>=\sigma_b \\ E_a>E_b\)
+\(Case 3 \\ \sigma_a><\sigma_b \\ E_a<E_b\) HELP HELP HELP
+
+\subsection{Exercise 4.12}\label{exercise-4.12}
+
+\emph{An agent faces a risky situation in which he can lose some amount
+of money with probabilities given in the following table:}
+\citep[p.10]{exercises_danthine}
+
+\begin{center}\includegraphics[width=150px]{figures/matrix} \end{center}
+
+\emph{This agent has a utility function of wealth of the form}
+\citep[p.10]{exercises_danthine}
+
+\[U\left(Y\right)=\frac{Y^{1-\gamma}}{1-\gamma}+2\]
+
+\emph{His initial wealth level is 10000 and his \(\gamma\) s equal to
+1.2.} \citep[p.10]{exercises_danthine}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{Calculate the certainty equivalent of this prospect for this
+  agent. Calculate the risk premium. What would be the certainty
+  equivalent of this agent if he would be risk neutral?}
+  \citep[p.10]{exercises_danthine}
+\item
+  \emph{Describe the risk premium of an agent whose utility function of
+  wealth has the form implied by the following properties:
+  \(U'\left(Y\right)>0\) and \(U''\left(Y\right)>0\)}
+  \citep[p.10]{exercises_danthine}
+\end{enumerate}
+
+\subsection{Exercise 4.13}\label{exercise-4.13}
+
+\emph{An agent with a logarithmic utility function of wealth tries to
+maximize his expected utility. He faces a situation in which he will
+incur a loss of \(L\) with probability \(\pi\). He has the possibility
+to insure against this loss. The insurance premium depends on the extent
+of the coverage. The amount covered is denoted by \(h\) and the price of
+the insurance per unit of coverage is \(p\) (hence the amount he has to
+spend on the insurance will be \(hp\)).}
+\citep[p.10]{exercises_danthine}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \emph{Calculate the amount of coverage h demanded by agent as a
+  function of his wealth level \(Y\), the loss \(L\), the probability
+  \(\pi\) and the price of the insurance \(p\).}
+  \citep[p.10]{exercises_danthine}
+\item
+  \emph{What is the expected gain of an insurance company offering such
+  a contract ?} \citep[p.10]{exercises_danthine}
+\item
+  \emph{If there is perfect competition in the insurance market (zero
+  profit), what price p will the insurance company set?}
+  \citep[p.10]{exercises_danthine}
+\item
+  \emph{What amount of insurance will the agent buy at the price
+  calculated under c. What is the influence of the form of the utility
+  function?} \citep[p.11]{exercises_danthine}
+\end{enumerate}
+
+\bibliography{references.bib}
+
+
+\end{document}

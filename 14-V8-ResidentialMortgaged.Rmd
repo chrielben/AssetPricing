@@ -1,0 +1,141 @@
+# Veronesi: Chapter 8: Basics of Residential Mortgage Backed Securities
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise No. 1
+
+*Mortgage backed securities make coupon payments on a monthly basis. This means that the yield curve should be estimated in this frequency. Unfortunately, Treasuries traded on a given day are not enough in order to use the standard bootstrap techniques to obtain the monthly yield curve, as the maturity usually spans for up to 30 years. Other techniques such as the Extended Nelson Siegel model discussed in Chapter 2 should be used instead to obtain the yield curve. Given the data on bonds in Table 8.8 traded on December 1, 2000, compute the monthly yield curve and the discounts for the next 30 years.* [@book_veronesi, p.318]
+
+Insert Table 8.8 here!!!
+
+### Exercise No. 2
+
+*Consider the following MBS pass through with principal \$300 million. The original mortgage pool has a WAM = 360 months (30 years) and a WAC = 7.00%. The pass through security pays a coupon equal to 6.5%. Instead of the yield curve, you are given the following parameters from the extended Nelson Siegel model (see Chapter 2): $\theta_0 = 6,278.30$, $\theta_1 = -6,278.25$, $\theta_2 = -6,292.47$, $\theta_3 = 0.04387$, $\lambda_1 = 27,056.49$, and $\lambda_2 = 30.48$. That is, to compute the continously compounded zero coupon yield with maturity $T$, The formu la is* [@book_veronesi, p.318-320]
+
+$$r(0,T) = \theta_0 + (\theta_1 + \theta_2) \frac{1-e^{-\frac{T}{\lambda_1}}}{\frac{T}{\lambda_1}} - \theta_2 e^{-\frac{T}{\lambda_1}} + \theta_3 \left( \frac{1-e^{-\frac{T}{\lambda_2}}}{\frac{T}{\lambda_2}} - e^{-\frac{T}{\lambda_2}} \right)$$
+
+*The discount with maturity $T$ is then $(0,T) = e^{-r(0,T)\times T}$.* [@book_veronesi, p.320]
+
+a. *What is  the price of the pass through? Assume a constant PSA = 150%.* [@book_veronesi, p.320]
+
+b. *Compute the duration of this security assuming that the PSA remains constant at 150%.* [@book_veronesi, p.320]
+
+c. *Compute the effective duration of this security assuming that the PSA increases to 200% if the term structure shifts down by 50 basis points, while it decreases to 120% if term structure shifts up by 50 basis points. Comment on any difference compared to your result in part (b).* [@book_veronesi, p.320]
+
+d. *Compute the effective convexity of this security under the same PSA assumptions as in part (c). Interpret your results.* [@book_veronesi, p.320]
+
+### Exercise No. 3
+
+*Consider the following MBS pass through with principal \$300 milion. The original mortgage pool has WAM = 360 months (30 years) and a WAC = 7.00%. The pass-through security pays a coupon equal to 6.5%. Use the same spot rate $r(0,T)$ as computed in Exercise 2 for your calculations. This security is divided into four tranches (A, B, C, and D), each with the principal in Table 8.9:* [@book_veronesi, p.320]
+
+Insert table 8.9 here!!!
+
+a. *What is the price of the trache? Assume a constant PSA = 150%.* [@book_veronesi, p.320]
+
+b. *Compute the effective duration of the various tranches assuming that the PSA increases to 200% if the term structure shifts down by 50 basis points, while it decreases to 120% if the term structure shifts up by 50 basis points. Which trache is more sensitive to interest rate movements? Which tranche is more sensitive to interest rate movements? Which trache is less sensitive?* [@book_veronesi, p.320]
+
+c. *Compute the effective convexity of the various tranches under the same PSA assumptions as in part (b). Interpret your results.* [@book_veronesi, p.320]
+
+d. *If you decide to buy all the tranches, is this the same as holding the MBS pass through in Exercise 2? (e.g., Does it have the same price? Same duration?)* [@book_veronesi, p.320]
+
+### Exercise No. 4
+
+*Consider the following MBS pass through with principal \$300 million. The original mortgage pool has a WAM = 360 months (30 years) and a WAC = 7.00%. The pass-through security pays a coupon equal to 6.5%. Use the same spot rate $r(0,T)$ as computed in Exercise 2 for your calculations. This security is divided into four tranches (A, B, C, and Z)., each with the principal in Table 8.10. Tranche Z is an __accrual__ tranche that does not receive payments until all other traches are paid off. This means that interest payments are accrued (nominally added to the principal of the tranche) until the other tranches' principal is fully paid.* [@book_veronesi, p.321]
+
+Inser table 8.10 here!!!
+
+a. *What is the price of each tranche? Assume a constant PSA = 150%.* [@book_veronesi, p.321]
+
+b. *Compute the effective duration of the various tranches assuming that the PSA increases to 200% if the term structure shifts down by 50 basis points, while it decreases to 120% if the term structure shifts up by 50 basis points. Which tranche is more sensitive to interest rate movements? Which tranche is less sensitive?* [@book_veronesi, p.321]
+
+c. *Is tranche Z more sensitive to interest rate changes than Tranche D from Exercise 4? What about tranches A, B, and C? Are they more sensitive to interest rate changes if they are supported by Tranche D or by Tranche Z?* [@book_veronesi, p.321]
+
+d. *Compute the effective convexity of the various tranches under the same PSA assumptions as in part (b). Interpret your results.* [@book_veronesi, p.321]
+
+e. *If you decide to buy all the tranches, is this the same as holding the MBS pass through from Exercise 2 (e.g., Does it have the same price? Same duration?).* [@book_veronesi, p.321]
+
+### Exercise No. 5
+
+*Consider the following MBS pass through with principal \$300 million. The original mortgage pool has a WAM = 360 months (30 years) and a WAC = 7.00%. The pass through security pays a coupon equal to 6.5%. Use the same spot rate $r(0,T)$ as computed in Exercise 2 for your calculations. The security is divided into a Plan Amortization Class (PAC) and a support tranche according to Table 8.11.* [@book_veronesi, p.321]
+
+Inser table 8.11 here!!!
+
+a. *What is the price of each tranche? Assume a constant PSA = 150%.* [@book_veronesi, p.321]
+
+b. *Compute the effective duration of the two tranches assuming that the PSA increases to 200% if the term structure shifts down by 50 basis points, while it decreases to 120% if the term structure shifts up by 50 basis points. Which tranche is more sensitive to interest rate movements? Which tranche is less sensitive?* [@book_veronesi, p.321]
+
+c. *Compute the effective convexity of the various tranches under the same PSA assumptions as in part (b). Interpret your results.* [@book_veronesi, p.322]
+
+d. *If you decide to buy all the tranches, is this the same as holding the MBS pass through from Exercise 3 (e.g., Does it have the same price? Same duration?).* [@book_veronesi, p.322]
+
+### Exercise No. 6
+
+*Consider the following MBS pass through with principal \$300 million. The original mortgage pool has a WAM = 360 months (30 years) and a WAC = 7.00%. The pass-through security pays a coupon equal to 6.5%. Use the same spot rate $r(0,T)$ as computed in Exercise 2 for your calculations. The pass through is divided into a Principal Only tranche and an Interest Only tranche.* [@book_veronesi, p.322]
+
+a. *What is the price of each tranche? Assume a constant PSA = 150%.* [@book_veronesi, p.322]
+
+b. *Compute the effective duration of the IO and PO tranches assuming that the PSA increases to 200% if the term structure shifts down by 50 basis points, while it decreases to 120% if the term structure shifts up by 50 basis points. Which tranche is more sensitiv to interest rate movements? Which tranche is less sensitive?* [@book_veronesi, p.322]
+
+c. *Compute the effective convexity of the IO and  PO tranchesunder the same PSA assumptions as in part (b). Interpret your results.* [@book_veronesi, p.322]
+
+d. *If you decide to buy all the tranches, is this the same as holding the MBS pass through from Exercise 2 (e.g., Does it have the same price? Same duration?).* [@book_veronesi, p.322]
+
+### Exercise No. 7
+
+*The following exercise is based on a series of investments made in 1993 by City Colleges of Chicago (CCC), a system of community colleges. Its treasurer decided to invest up to 70% of its portfolio in the lower tranches of a Fannie Mae MBS: FNMA 1993-237.[^1] All payments within this trust were Principal-Only (PO); this particular type of security was called a Stripped Mortgage Backed Security (SMBS). The FNMA 1993-237 had a principal of \$425 million with a WAM = 348 and WAC = 8.27%. Because all tranches were PO, the coupon rate of the underlying pass through is not needed. The security was divided in the tranches and types reported in Table 8.12, where PAC stands for Planned Amortization Class, TAC stands for Targeted Amortization Class, and SUP stands for Support Class.* [@book_veronesi, p.322]
+
+[^1]: *Information for this case was obtained from documents redered by the United States Court of Appeals for the Fifth Circuit: Westcap Corp. vs. City Colleges of Chicago (CCC) available in Lexis (25502). CCC also invested in another similar security: FNMA 1993-205, which we ommited to simplify the exercise.* [@book_veronesi, p.322]
+
+*In Table 8.12, UC and LC stands for the upper collar and the lower collar for the PACs. TAC are similar to PAC but, instead of using a range of PSA, use only a single valueof PSA to create a scheduleof payments. The prospectus for the security pointed out the following principal distribution plan:* [@book_veronesi, p.322-323]
+
+Increase margins here!!!
+
+*Principal will be distributed monthly on the Certificates in an amount (the "Principal Distribution Amount") equal to the aggregate distributions of principal concurrently made on the SMBS. On each Distribution Amount will be distributed as principal of the Classes in the following order of priority:* [@book_veronesi, p.323]
+
+a. *sequentially, to the A, B and C Classes [Planned Amortization Class (PAC)], in that order, until the principal balances thereof are reduced to their respective Planned Balances for such Distribution Date;* [@book_veronesi, p.323]
+
+b. *sequentially, to the E and G Classes [Targetted Amortization Class (TAC)], in that order, until the principal balances balances thereof are reduced to their respective Targetted Balances for such Distribution Date;* [@book_veronesi, p.323]
+
+c. *to the H Class [Support Class], until the principal balance thereof is reduced to zero;* [@book_veronesi, p.323]
+
+d. *to the G and E Classes, in that order, without regards to their Targetted Balances and until the principal balances thereof are reduced to zero;* [@book_veronesi, p.323]
+
+e. *to the A Class, without regard to its Planned Balance and until the principal balance thereof is reduced to zero; and* [@book_veronesi, p.323]
+
+f. *concurrently, to the B and C classes in proportion to their then current principal balances, without regards to the Planned Balances and until the principal balances thereof are reduced to zero.* [@book_veronesi, p.323]
+
+Decrease margins to original here!!!
+
+*On October 1, 1993 the market faced the yield curve summarized by the following Extended Nelson Siegel model parameters (see Chapter 2 and Equation 8.23 above): $\theta_0 = 6,278.30$, $\theta_1 = -6,278.30$, $\theta_2 = -6,291.28$, $\theta_3 = 0.70906$, $\lambda_1 = 27,056.50$, and $\lambda_2 = 20.2312$.* [@book_veronesi, p.323]
+
+a. *According to industry experts you find out that PSA is currently at 450%.* [@book_veronesi, p.323]
+
+    i. *Assuming a constant PSA rate, value the tranches of FNMA 1993-237.* [@book_veronesi, p.323]
+  
+    ii. *What is the duration of each of the tranches? Are G and H the tranches with the highest duration?* [@book_veronesi, p.323]
+  
+b. *CCC decides to invest \$100 million, divided equally into tranches G and H. After 6 months you receive new datato compute the yield curve (it is now April 4, 1994) according to the Extended Nelson Siegel model: $\theta_0 = 6,278.30$, $\theta_1 = -6,278.30$, $\theta_2 = -6,291.28$, $\theta_3 = 0.97584$, $\lambda_1 = 27,056.50$, and $\lambda_2 = 20.2249$.* [@book_veronesi, p.323-324]
+
+    i. *Have interest rates risen? Staayed the same? Or fallen?* [@book_veronesi, p.324]
+  
+    ii. *What will the value of the portfolio be on April 4, 1994 assuming that the PSA stays the same?* [@book_veronesi, p.324]
+
+c. *You find out that on April 4, 1994 the PSA is actually 200%.* [@book_veronesi, p.324]
+
+    i. *Is the change in the PSA a reflection of what happens to the yield curve? Why or why not?* [@book_veronesi, p.324]
+  
+    ii. *Will this change offset the P/L in the portfolio's value from the change in interest rates?* [@book_veronesi, p.324]
+  
+    iii. *Compute the price of each tranche at April 4, 1994. Do the changes reflect what you expected from the duration calculation?* [@book_veronesi, p.324]
+  
+    iv. *What is the gain/loss of the portfolio at this time?* [@book_veronesi, p.324]

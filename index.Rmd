@@ -4,7 +4,7 @@ author: "Christoffer Jul Elben"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib, references.bib]
+bibliography: [references.bib]
 biblio-style: apalike
 link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
@@ -15,17 +15,3 @@ description: "This is a minimal example of using the bookdown package to write a
 $$2+2=4$$
 
 Hello world [@book_danthine, p. 123] [@book_veronesi, p. 123].
-
-# Danthine & Donaldson: Chapter 2: The Challenges of Asset Pricing: A Road Map
-
-Text
-
-## Pre-lecture notes
-
-Text
-
-## Lecture notes
-
-Text
-
-## Exercises

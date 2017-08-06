@@ -32,14 +32,14 @@ $$\sigma_A=10\%$$
 *You are a portfolio manager considering whether or not to allocate some of the money with which you are entrusted to the market index of Australian stocks. Your assistant provides you with the following historical return information:* [@exercises_danthine, p.17]
 
 ```{r fig.align="center", echo=FALSE, out.width = "150px",}
-knitr::include_graphics("figures/matrix.jpg")
+knitr::include_graphics("/Users/christofferelben/Library/Mobile Documents/com~apple~CloudDocs/Studier/cand.merc.fin/1st Semester/Asset Pricing/Notes/figures/matrix.jpg")
 ```
 
 a. *Show that the addition of the Australian index (AUS) to your portfolio (your) will reduce risk (at no loss in returns) provided* [@exercises_danthine, p.17]
 
 $$corr\left(your,AUS\right)<\frac{\sigma_{your}}{\sigma_{AUS}}$$
 
-*(assuming, as in the case, $\sigma_{AUS}>\sigma_{your}$)* [@exercises_danthine, p.17]
+<center>*(assuming, as in the case, $\sigma_{AUS}>\sigma_{your}$)* [@exercises_danthine, p.17]</center>
 
 \linebreak
 
