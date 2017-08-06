@@ -1,0 +1,204 @@
+# Danthine & Donaldson: Chapter 4: Measuring Risk and Risk Aversion
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise No. 4.1
+
+*Risk aversion: Consider the following utility functions (defined over wealth Y):* [@exercises_danthine, p.5]
+
+$$\left(1\right) \ U\left(Y\right)=-\frac{1}{Y}$$
+$$\left(2\right) \ U\left(Y\right)=ln \ Y$$
+$$\left(3\right) \ U\left(Y\right)=-Y^{-\gamma}$$
+$$\left(4\right) \ U\left(Y\right)=-exp\left(-\gamma Y\right)$$
+$$\left(5\right) \ U\left(Y\right)=\frac{Y^\gamma}{\gamma}$$
+$$\left(6\right) \ U\left(Y\right)=\alpha Y-\beta Y^2$$
+
+a. *Check that they are well behaved $\left(U'>0,U''<0\right)$ or state restrictions on the parameters so that they are [utility functions (1) – (6)]. For utility function (6), take positive $\alpha$ and $\beta$, and give the range of wealth over which the utility function is well behaved.* [@exercises_danthine, p.6]
+
+b. *Compute the absolute and relative risk-aversion coefficients.* [@exercises_danthine, p.6]
+
+c. *What is the effect of the parameter $\gamma$ (when relevant)?* [@exercises_danthine, p.6]
+
+d. *Classify the functions as increasing/decreasing risk-aversion utility functions (both absolute and relative).* [@exercises_danthine, p.6]
+
+### Exercise 4.2
+
+*Certainty equivalent:* [@exercises_danthine, p.6]
+
+$$\left(1\right) \ U=-\frac{1}{Y}$$
+$$\left(2\right) \ U=ln \ Y$$
+
+$$\left(3\right) \ U=\frac{Y^\gamma}{\gamma}$$
+
+*Consider the lottery $L_1=\left(50,000;10,000;0.50\right)$. Determine the lottery $L_2=\left(x;0;1\right)$ that makes an agent indifferent to lottery $L_1$ with utility functions (1), (2), and (3) as defined. For utility function (3), use $\gamma=\{0.25,0.75\}$. What is the effect of changing the value of $\gamma$? Comment on your results using the notions of risk aversion and certainty equivalent.* [@exercises_danthine, p.6]
+
+### Exercise 4.3
+
+*Risk premium: A businesswoman runs a firm worth CHF 100,000. She faces some risk of having a fire that would reduce her net worth according to the following three states, $i=1,2,3$, each with probability $\pi\left(i\right)$ (Scenario A).* [@exercises_danthine, p.7]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+*Of course, in state 3, nothing detrimental happens, and her business retains its value of CHF 100,000.* [@exercises_danthine, p.7]
+
+a. *What is the maximum amount she will pay for insurance if she has a logarithmic utility function over final wealth? (Note: The insurance pays CHF 99,999 in the first case; CHF 50,000 in the second; and nothing in the third.)* [@exercises_danthine, p.7]
+
+b. *Do the calculations with the following alternative probabilities:* [@exercises_danthine, p.7]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+*Is the outcome (the comparative change in the premium) a surprise? Why?* [@exercises_danthine, p.7]
+
+### Exercise 4.4
+
+*Consider two investments $A$ and $B$. Suppose that their returns, $\tilde{r}_A$ and $\tilde{r}_B$, are such that $\tilde{r}_A=\tilde{r}_B+\vartheta$, where $\vartheta$ is a nonnegative random variable. Show that $A$ FSD $B$.* [@exercises_danthine, p.7]
+
+### Exercise 4.5
+
+*Four-partquestion:* [@exercises_danthine, p.7]
+
+a. *Explain intuitively the concept of first-order stochastic dominance.* [@exercises_danthine, p.7]
+
+b. *Explain intuitively the concept of second-order stochastic dominance.* [@exercises_danthine, p.8]
+
+c. *Explain intuitively the mean variance criterion.* [@exercises_danthine, p.8]
+
+d. *You are offered the following two investment opportunities.* [@exercises_danthine, p.8]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+*apply concepts a–d. Illustrate the comparison with a graph.* [@exercises_danthine, p.8]
+
+### Exercise 4.6
+
+*An individual (operating in perfect capital markets) with a zero initial wealth, and the utility function $U\left(Y\right)=Y\frac{1}{2}$ is confronted with the gamble $\left(16,4;\frac{1}{2}\right)$.* [@exercises_danthine, p.8]
+
+a. *What is his certainty equivalent for this gamble?* [@exercises_danthine, p.8]
+
+b. *If there was an insurance policy that, together with the original gamble, would guarantee him the expected payoff of the gamble, what is the maximum premium he would be willing to pay for it?* [@exercises_danthine, p.8]
+
+c. *What is the minimum required increase (the probability premium) in the probability of the high-payoff state so that he will not be willing to pay any premium for such an insurance policy? (Note that the insurance policy still pays the expected payoff of the unmodified gamble)* [@exercises_danthine, p.8]
+
+d. *Now assume that he is confronted with the gamble $\left(36,16;\frac{1}{2}\right)$. Calculate the certainty equivalent, the insurance premium, and the probability premium for this case as well. Explain what is going on, and why?* [@exercises_danthine, p.8]
+
+### Exercise 4.7
+
+*Refer to Table 4.2. Suppose the return data for investment 3 was as follows. Is it still the case* [@exercises_danthine, p.9]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+*that investment 3 SSD investment 4?* [@exercises_danthine, p.9]
+
+### Exercise 4.8
+
+*Consider two investments with the following characteristics:* [@exercises_danthine, p.9]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+a. *Is there state-by-state dominance between these two investments?* [@exercises_danthine, p.9]
+
+b. *Is there FSD between these two investments?* [@exercises_danthine, p.9]
+
+### Exercise 4.9
+
+*If you are exposed to a 50/50 probability of gaining or losing CHF 1'000 and an insurance that removes the risk costs CHF 500, at what level of wealth will you be indifferent between taking the gamble or paying the insurance? That is, what is your certainty equivalent wealth for this gamble? Assume that your utility function is $U\left(Y\right)=-1/Y$. What would the solution be if the utility function were logarithmic?* [@exercises_danthine, p.9]
+
+### Exercise 4.10
+
+*Assume that you have a logarithmic utility function on wealth $U\left(Y\right)=ln \ Y$ and that you are faced with a 50/50 probability of winning or losing CHF 1'000. How much will you pay to avoid this risk if your current level of wealth is CHF 10'000? How much would you pay if your level of wealth is CHF 1'000'000? Did you expect that the premium you were willing to pay would increase/decrease? Why?* [@exercises_danthine, p.9]
+
+### Exercise 4.11
+
+*Assume that security returns are normally distributed. Compare portfolios A and B, using both first and second-order stochastic dominance:* [@exercises_danthine, p.10]
+
+
+$Case 1 \\ \sigma_a>\sigma_b \\ E_a=E_b$ $Case 2 \\ \sigma_a>=\sigma_b \\ E_a>E_b$ $Case 3 \\ \sigma_a><\sigma_b \\ E_a<E_b$ HELP HELP HELP
+
+### Exercise 4.12
+
+*An agent faces a risky situation in which he can lose some amount of money with probabilities given in the following table:* [@exercises_danthine, p.10]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+*This agent has a utility function of wealth of the form* [@exercises_danthine, p.10]
+
+$$U\left(Y\right)=\frac{Y^{1-\gamma}}{1-\gamma}+2$$
+
+*His initial wealth level is 10000 and his $\gamma$ s equal to 1.2.* [@exercises_danthine, p.10]
+
+a. *Calculate the certainty equivalent of this prospect for this agent. Calculate the risk premium. What would be the certainty equivalent of this agent if he would be risk neutral?* [@exercises_danthine, p.10]
+
+b. *Describe the risk premium of an agent whose utility function of wealth has the form implied by the following properties: $U'\left(Y\right)>0$ and $U''\left(Y\right)>0$* [@exercises_danthine, p.10]
+
+### Exercise 4.13
+
+*An agent with a logarithmic utility function of wealth tries to maximize his expected utility. He faces a situation in which he will incur a loss of $L$ with probability $\pi$. He has the possibility to insure against this loss. The insurance premium depends on the extent of the coverage. The amount covered is denoted by $h$ and the price of the insurance per unit of coverage is $p$ (hence the amount he has to spend on the insurance will be $hp$).* [@exercises_danthine, p.10]
+
+a. *Calculate the amount of coverage h demanded by agent as a function of his wealth level $Y$, the loss $L$, the probability $\pi$ and the price of the insurance $p$.* [@exercises_danthine, p.10]
+
+b. *What is the expected gain of an insurance company offering such a contract ?* [@exercises_danthine, p.10]
+
+c. *If there is perfect competition in the insurance market (zero profit), what price p will the insurance company set?* [@exercises_danthine, p.10]
+
+d. *What amount of insurance will the agent buy at the price calculated under c. What is the influence of the form of the utility function?* [@exercises_danthine, p.11]
+
+### Exercise 4.14
+
+*Given the following probability distributions for risky payoffs $\tilde{x}$ and $\tilde{z}$:* [@exercises_danthine, p.11]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+a. *If the only available choice is 100% of your wealth in $\tilde{x}$or 100% in $\tilde{z}$ and you choose on the basis of mean and variance, which asset is preferred?* [@exercises_danthine, p.11]
+
+b. *According to the second-order stochastic dominance criterion, how would you compare them?* [@exercises_danthine, p.11]
+
+### Exercise 4.15
+
+*There is an individual with a well-behaved utility function, and initial wealth $Y$. Let a lottery offer a payoff of $G$ with probability $\pi$ and a payoff of $B$ with probability $1-\pi$.* [@exercises_danthine, p.11]
+
+a. *If the individual already owns this lottery denote the minimum price he would sell it for by $P_s$. Write down the expression $P_s$ has to satisfy.* [@exercises_danthine, p.11]
+
+b. *If he does not own it, write down the expression $P_b$ (the maximum price he would be willing to pay for it) has to satisfy.* [@exercises_danthine, p.11]
+
+c. *Assume now that $\pi=1/$2, $Y=10$, $G=6$, $B=26$, and the utility function is $U(Y)=Y^{1/2}$. Find buying and selling prices. Are they equal? Explain why not. Generally, can they ever be equal?* [@exercises_danthine, p.11]
+
+### Exercise 4.16
+
+*Consider the following investments:* [@exercises_danthine, p.11]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+*Check that neither investment dominates the other on the basis of* [@exercises_danthine, p.11]
+
+* *The Mean-Variance criterion* [@exercises_danthine, p.11]
+
+* *First Order Stochastic Dominance* [@exercises_danthine, p.11]
+
+* *Second Order Stochastic Dominance* [@exercises_danthine, p.11]
+
+*How could you rank these investments?* [@exercises_danthine, p.11]

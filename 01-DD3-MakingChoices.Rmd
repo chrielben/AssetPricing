@@ -1,0 +1,40 @@
+# Danthine & Donaldson: Chapter 3: Making Choices in Risky Situations
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+### Exercise 3.1
+
+*Utility function: Under certainty, any increasing monotone transformation of a utility function is also a utility function representing the same preferences. Under uncertainty, we must restrict this statement to linear transformations if we are to keep the same preference representation. Give a mathematical as well as an economic interpretation for this.* [@exercises_danthine, p.4]
+
+*Check it with this example. Assume an initial utility function attributes the following values to three perspectives:* [@exercises_danthine, p.4]
+
+$$B \ \ \ u\left(B\right)=100$$
+$$M \ \ \ u\left(M\right)=10$$
+$$P \ \ \ u\left(P\right)=50$$
+
+a. *Check that with this initial utility function, the lottery $L=\left(B,M,0.50\right)\succ P$.* [@exercises_danthine, p.4]
+
+b. *The proposed transformations are $f\left(x\right)=a+bx, a\geq 0,b>0$ and $g\left(x\right)=ln\left(x\right)$. Check that under $f, L\succ P$.* [@exercises_danthine, p.5]
+
+### Exercise 3.2
+
+*Lotteries: Discuss the equivalence between $\left(x,z,\pi\right)$ and $\left(x,y,\pi+\left(1-\pi\right)\tau\right)$ when $z=\left(x,y,\tau\right)$. Can you think of circumstances under which they would not be viewed as equal?* [@exercises_danthine, p.5]
+
+### Exercise 3.3
+
+*Intertemporal consumption: Consider a two-date (one-period) economy and an agent with utility function over consumption:* [@exercises_danthine, p.5]
+
+$$U\left(c\right)=\frac{c^{1-\gamma}}{1-\gamma}$$
+
+*at each period. Define the intertemporal utility function as $V\left(c_1,c_2\right)=U\left(c_1\right)+U\left(c_2\right)$. Show (try it mathematically) that the agent will always prefer a smooth consumption stream to a more variable one with the same mean, that is,* [@exercises_danthine, p.5]
+
+$$U\left(\bar{c}\right)+U\left(\bar{c}\right)>U\left(c_1\right)+U\left(c_2\right)$$
+$$If \ \bar{c}=\frac{c_1+c_2}{2}$$

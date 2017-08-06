@@ -1,0 +1,50 @@
+# Danthine & Donaldson: Chapter 6: Making Risk Aversion and Investment Decisions, Part II: Modern Portfolio Theory
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise 6.1
+
+*Consider an equally weighted portfolio of three stocks, each of which is independently distributed of the others [that is, $cov\left(r_i,r_j\right)=0$ for different securities $i$ and $j$]. Assume also that each stock has the same total risk $\left(\sigma\right)$. What fraction of each stock’s risk is diversified away by including it in this portfolio?* [@exercises_danthine, p.16]
+
+### Exercise 6.2
+
+*At the moment, all of your assets are invested in asset $A$ with the following return and risk characteristics:* [@exercises_danthine, p.16]
+
+$$E\tilde{r}_A=10\%$$
+$$\sigma_A=10\%$$
+
+*Another asset (call it "$B$”) becomes available; the characteristics of $B$ are as follows; $E\tilde{r}_B=20\%$, $\sigma_B=25\%$. Furthermore, the correlation of $A$’s and $B$’s return patterns is $–1$.* [@exercises_danthine, p.16]
+
+*By reallocating your portfolio to include some of asset $B$, how much additional return could you expect to receive if you wanted to maintain your portfolio’s risk at $\sigma=10\%$. Hint: Solve for $w_B$, __not__ $w_A$.* [@exercises_danthine, p.16]
+
+### Exercise 6.3
+
+*You are a portfolio manager considering whether or not to allocate some of the money with which you are entrusted to the market index of Australian stocks. Your assistant provides you with the following historical return information:* [@exercises_danthine, p.17]
+
+```{r fig.align="center", echo=FALSE, out.width = "150px",}
+knitr::include_graphics("figures/matrix.jpg")
+```
+
+a. *Show that the addition of the Australian index (AUS) to your portfolio (your) will reduce risk (at no loss in returns) provided* [@exercises_danthine, p.17]
+
+$$corr\left(your,AUS\right)<\frac{\sigma_{your}}{\sigma_{AUS}}$$
+
+*(assuming, as in the case, $\sigma_{AUS}>\sigma_{your}$)* [@exercises_danthine, p.17]
+
+\linebreak
+
+b. *Based on this historical data could you receive higher returns for the same level of risk (standard deviation) by allocating some of your wealth to the Australian index?* [@exercises_danthine, p.17]
+
+c. *Based on historical experience, would it be possible to reduce your portfolio’s risk below its current level by investing something in the Australian index?* [@exercises_danthine, p.17]
+
+d. *What fraction of the variation in Australian stocks can be explained by variation in your portfolio’s returns?* [@exercises_danthine, p.17]

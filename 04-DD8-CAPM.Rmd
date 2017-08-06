@@ -1,0 +1,111 @@
+# Danthine & Donaldson: Chapter 8: The Capital Asset Pricing Model
+
+Text
+
+## Pre-lecture notes
+
+Text
+
+## Lecture notes
+
+Text
+
+## Exercises
+
+### Exercise 8.1
+
+*Comment fully on the following statement: If a portfolio has a high $\beta$, then further diversification is possible.* [@exercises_danthine, p.18]
+
+### Exercise 8.2
+
+*What is the difference between the relationship implied by the Capital Market Line (CML) and the Security Market Line (SML)? Consider a particular portfolio $P$ with risk $\sigma_P$. Under what circumstances will the CML and the SML give the same $E\overset{\sim}{r}_P$?* [@exercises_danthine, p.18]
+
+### Exercise 8.3
+
+*Among your numerous assets, you are the owner of a finance company that extends one- year loans to people to buy appliances and other household goods. A young finance whiz that you just hired suggests that since the default risk of your loans is entirely diversifiable, you should charge your customers (those who are borrowing from you) the risk-free rate.* [@exercises_danthine, p.18]
+
+a. *What do you think of the suggestion?* [@exercises_danthine, p.18]
+
+b. *Assume that the risk-free rate is 10 percent and that the probability of default is 5 percent for the next year on a typical loan. In addition, assume that if a borrower defaults, all the principal but no interest is repaid. What rate should your finance company charge for loans over the next year?* [@exercises_danthine, p.18]
+
+c. *Suppose that the reclaimed appliances have lost 20 percent of their original value and that in the event of default no interest is paid. What rate should you set?* [@exercises_danthine, p.18]
+
+### Exercise 8.4
+
+*In the CAPM setting, it is argued that only a fraction of the total risk of a particular asset is priced. Use the CML and SML to prove this assertion.* [@exercises_danthine, p.18]
+
+### Exercise 8.5
+
+*Consider two fully isolated economies, economy 1 and economy 2. The same assets are traded in both economies, but the average investor in economy 2 is more risk averse than the average investor in economy 1. Compare the CMLs in both economies.* [@exercises_danthine, p.18]
+
+### Exercise 8.6
+
+*Consider two fully isolated economies. Asset returns in economy 2 are, in general, more positively correlated than asset returns in economy 1. Compare the CMLs in both economies.* [@exercises_danthine, p.19]
+
+### Exercise 8.7
+
+*Under the CAPM, all investors form portfolios of two assets, a risk-free asset and a risky portfolio $M$, regardless of their level of wealth $Y$. If an investor becomes wealthier, he may want to increase or decrease the proportion of his wealth held in the risky portfolio, and, by the Cass–Stiglitz Theorem, unless his preferences have a very specific form, as his wealth changes, he will want to alter the composition of the risky part of his portfolio. The CAPM does not assume such preference restrictions. Yet, the CAPM equilibrium does not seem to permit the desired changes in the composition of the agent’s risky portfolio! Is there a contradiction?* [@exercises_danthine, p.19]
+
+### Exercise 8.8
+
+*Consider the following three assets:* [@exercises_danthine, p.19]
+
+
+$$e=\left(\begin{array}{c} \bar{r}_1 \\ \bar{r}_2 \\ \bar{r}_3 \end{array}\right)=\left(\begin{array}{c} 1 \\ 2 \\ 3 \end{array}\right) \text{ and }V=\left(\begin{array}{c} 1 & -1 & 0 \\ -1 & 4 & -1 \\ 0 & -1 & 9 \end{array}\right)$$
+
+
+\linebreak
+
+*Compute $g$ and $h$ from our portfolio composition characterization. Identify the MVP. Identify the zero covariance portfolio for asset 3.* [@exercises_danthine, p.19]
+
+*Note that $V^{-1}=\left(\begin{array}{c} A & B & C \\ B & B & C \\ C & C & D\end{array}\right)$ where* [@exercises_danthine, p.19]
+
+
+$$\begin{aligned}
+&A=1.3446154\\
+&B=0.346154\\
+&C=0.038462\\
+&D=0.115385
+\end{aligned}$$
+
+### Exercise 8.9
+
+*Consider a two-period economy with $I$ agents, $J$ risky assets, and one risk-free rate asset. You can write the agent’s wealth as follows:* [@exercises_danthine, p.20]
+
+$$\overset{\sim}{Y}_i=\left(Y_o^i-\sum_jx^i_j\right)\left(1+r_f\right)+\sum_jx_j^i\left(1+\overset{\sim}{r}\right)$$
+
+*where* [@exercises_danthine, p.20]
+
+
+$$\begin{aligned}
+Y_0^i&= \text{ initial wealth of agent } i\text{, }\\
+r_f&=\text{ the risk-free interest rate,}\\
+\overset{\sim}{r}_j&=\text{ the random rate of return on the }j\text{th risky asset,}\\
+x_j^i&=\text{ the amount invested in the }j\text{th asset by agent }i\text{.}
+\end{aligned}$$
+
+
+*As usual, the individual’s choice problem is:* [@exercises_danthine, p.20]
+
+$$\underset{x_j^i}{max} \ E\left[U_i\left(\overset{\sim}{Y}_i\right)\right]$$
+
+a. *Show that the FOC can be written as follows:* [@exercises_danthine, p.20]
+
+$$E\left[U_i'\left(\overset{\sim}{Y}_i\right)\left(\overset{\sim}{r}_j-r_f\right)\right]=0$$
+
+
+### Exercise 8.10
+
+### Exercise 8.11
+
+### Exercise 8.12
+
+### Exercise 8.13
+
+### Exercise 8.14
+
+### Exercise 8.15
+
+### Exercise 8.16
+
+### Exercise 8.17
